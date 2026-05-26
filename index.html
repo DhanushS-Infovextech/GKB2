@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G K Builders | Premium Construction Company in Madurai</title>
+  <meta name="description" content="G K Builders in Tiruppalai, Madurai offers premium construction, villa, apartment, residential, and commercial building services with quality and excellence." />
+  <meta name="keywords" content="G K Builders, construction company Madurai, builders Tiruppalai, villa construction Madurai, apartment builders, residential construction Madurai" />
+  <meta name="author" content="G K Builders" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="G K Builders | Premium Construction Company in Madurai" />
+  <meta property="og:description" content="Building Dreams Into Reality — Premium construction and contracting services in Tiruppalai, Madurai." />
+  <meta property="og:url" content="https://gkbuilders.in" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+/* =========================================
+   G K BUILDERS — style.css
+   Premium Construction Website
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ─── CSS VARIABLES ─── */
+:root {
+  --white: #ffffff;
+  --cream: #faf8f4;
+  --cream-mid: #f3efe8;
+  --gray-light: #f0eff0;
+  --gray: #9a9a9a;
+  --gray-dark: #6b6b6b;
+  --text: #1a1a1a;
+  --text-mid: #3d3d3d;
+  --blue: #1b3a6b;
+  --blue-mid: #2554a0;
+  --blue-light: #3a6fc4;
+  --gold: #c9a94b;
+  --gold-light: #e0c06e;
+  --gold-pale: #f5ecd3;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ─── TYPOGRAPHY ─── */
+h1,h2,h3,h4,h5 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.2;
+  color: var(--blue);
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 700; }
+h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 600; }
+h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; font-family: 'Montserrat', sans-serif; }
+
+.section-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.section-title { margin-bottom: 1rem; }
+.section-subtitle {
+  color: var(--gray-dark);
+  font-size: 1rem;
+  max-width: 560px;
+  font-weight: 400;
+}
+.section-head { margin-bottom: 3.5rem; }
+.section-head.center { text-align: center; }
+.section-head.center .section-subtitle { margin: 0 auto; }
+
+/* ─── LAYOUT ─── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+section { padding: 6rem 0; }
+
+/* ─── BUTTONS ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.btn:hover::after { transform: scaleX(1); }
+.btn-primary {
+  background: var(--gold);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(201,169,75,0.35);
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201,169,75,0.45);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.6);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+.btn-blue {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 4px 20px rgba(27,58,107,0.25);
+}
+.btn-blue:hover {
+  background: var(--blue-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(27,58,107,0.35);
+}
+
+/* ─── DIVIDER ─── */
+.gold-line {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1.4rem 0;
+  transition: var(--transition);
+}
+#navbar.scrolled {
+  background: rgba(255,255,255,0.97);
+  padding: 0.9rem 0;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+  backdrop-filter: blur(12px);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-logo .logo-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--white);
+  transition: color 0.3s;
+  letter-spacing: 0.03em;
+}
+.nav-logo .logo-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+#navbar.scrolled .logo-name { color: var(--blue); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.nav-links a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+  transition: var(--transition);
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0.85rem; right: 0.85rem;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after { transform: scaleX(1); }
+#navbar.scrolled .nav-links a { color: var(--text-mid); }
+.nav-links a:hover { color: var(--gold) !important; }
+
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--white) !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 50px !important;
+  box-shadow: 0 3px 14px rgba(201,169,75,0.35);
+}
+.nav-cta::after { display: none; }
+.nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+#navbar.scrolled .hamburger span { background: var(--blue); }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--white);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  transition: color 0.2s;
+}
+.mobile-nav a:hover { color: var(--gold); }
+.mobile-nav-close {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  font-size: 1.6rem;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+#hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--blue);
+  padding-bottom: 7rem;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  animation: heroZoom 12s ease-out forwards;
+}
+@keyframes heroZoom {
+  to { transform: scale(1); }
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(11,31,65,0.88) 0%,
+    rgba(27,58,107,0.70) 50%,
+    rgba(11,31,65,0.82) 100%
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(201,169,75,0.18);
+  border: 1px solid rgba(201,169,75,0.45);
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.3s ease forwards;
+}
+.hero-badge span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.hero-badge i { color: var(--gold); font-size: 0.7rem; }
+
+.hero-content h1 {
+  color: var(--white);
+  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.5s ease forwards;
+}
+.hero-content h1 em {
+  font-style: normal;
+  color: var(--gold-light);
+}
+.hero-content p {
+  color: rgba(255,255,255,0.82);
+  font-size: 1.08rem;
+  max-width: 520px;
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.7s ease forwards;
+}
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.9s ease forwards;
+}
+
+/* Hero stats */
+.hero-stats {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  z-index: 2;
+  padding-bottom: 1.8rem;
+}
+.hero-stats-inner {
+  display: flex;
+  gap: 0;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  max-width: 680px;
+}
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 1.3rem 1rem;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+.stat-item:last-child { border-right: none; }
+.stat-item:nth-child(1) { animation-delay: 1.2s; }
+.stat-item:nth-child(2) { animation-delay: 1.4s; }
+.stat-item:nth-child(3) { animation-delay: 1.6s; }
+.stat-item:nth-child(4) { animation-delay: 1.8s; }
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  display: block;
+  line-height: 1;
+}
+.stat-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+/* scroll indicator */
+.scroll-ind {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.7;
+}
+.scroll-ind span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  writing-mode: vertical-rl;
+}
+.scroll-dot {
+  width: 4px;
+  height: 36px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-dot::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 40%;
+  background: var(--gold);
+  border-radius: 4px;
+  animation: scrollDot 2s ease-in-out infinite;
+}
+@keyframes scrollDot {
+  0%,100% { top: 0; }
+  50% { top: 60%; }
+}
+
+/* =========================================
+   TRUST BAR
+   ========================================= */
+.trust-bar {
+  background: var(--cream);
+  border-top: 1px solid rgba(201,169,75,0.15);
+  border-bottom: 1px solid rgba(201,169,75,0.15);
+  padding: 1.4rem 0;
+}
+.trust-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.trust-item i { color: var(--gold); font-size: 1rem; }
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+#about {
+  background: var(--white);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.about-img-block {
+  position: relative;
+}
+.about-main-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.about-accent-img {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 5px solid var(--white);
+  box-shadow: var(--shadow-md);
+}
+.about-badge {
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  background: var(--blue);
+  color: var(--white);
+  padding: 1.2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+.about-badge .badge-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+  display: block;
+}
+.about-badge .badge-txt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.value-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  border-left: 3px solid var(--gold);
+  transition: var(--transition);
+}
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+.value-card i {
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.value-card h4 {
+  font-size: 0.85rem;
+  color: var(--blue);
+  margin-bottom: 0.25rem;
+}
+.value-card p { font-size: 0.78rem; color: var(--gray-dark); }
+
+/* Timeline */
+.timeline {
+  display: flex;
+  gap: 0;
+  margin-top: 3rem;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 24px; left: 24px; right: 24px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--blue-light), var(--gold));
+}
+.tl-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+.tl-num {
+  width: 48px; height: 48px;
+  background: var(--blue);
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+.tl-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+/* =========================================
+   SERVICES SECTION
+   ========================================= */
+#services {
+  background: var(--cream);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid transparent;
+}
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--blue-light));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.service-card:hover::after { transform: scaleX(1); }
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+.service-icon {
+  width: 56px; height: 56px;
+  background: var(--gold-pale);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: var(--transition);
+}
+.service-icon i {
+  font-size: 1.4rem;
+  color: var(--gold);
+  transition: var(--transition);
+}
+.service-card:hover .service-icon {
+  background: var(--blue);
+}
+.service-card:hover .service-icon i { color: var(--white); }
+.service-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: var(--blue);
+}
+.service-card p {
+  font-size: 0.82rem;
+  color: var(--gray-dark);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
+.service-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: gap 0.2s;
+}
+.service-card:hover .service-link { gap: 0.7rem; }
+
+/* =========================================
+   WHY CHOOSE US
+   ========================================= */
+#why {
+  background: var(--white);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.why-card {
+  padding: 2.2rem;
+  border-radius: var(--radius-lg);
+  background: var(--cream);
+  position: relative;
+  transition: var(--transition);
+  overflow: hidden;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--blue), var(--blue-mid));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.why-card:hover::before { opacity: 1; }
+.why-card > * { position: relative; z-index: 1; }
+.why-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgba(201,169,75,0.15);
+  line-height: 1;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  transition: color 0.35s;
+}
+.why-card:hover .why-num { color: rgba(201,169,75,0.25); }
+.why-icon {
+  width: 52px; height: 52px;
+  background: var(--gold-pale);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: var(--transition);
+}
+.why-icon i {
+  font-size: 1.2rem;
+  color: var(--gold);
+  transition: color 0.35s;
+}
+.why-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  transition: color 0.35s;
+}
+.why-card p {
+  font-size: 0.83rem;
+  color: var(--gray-dark);
+  line-height: 1.7;
+  transition: color 0.35s;
+}
+.why-card:hover h3,
+.why-card:hover p { color: rgba(255,255,255,0.9); }
+.why-card:hover .why-icon {
+  background: rgba(255,255,255,0.15);
+}
+.why-card:hover .why-icon i { color: var(--gold-light); }
+
+/* =========================================
+   PROJECTS / GALLERY
+   ========================================= */
+#projects {
+  background: var(--cream);
+}
+.project-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.3rem;
+  border-radius: 50px;
+  background: var(--white);
+  color: var(--gray-dark);
+  transition: var(--transition);
+  border: 1.5px solid transparent;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--blue);
+  color: var(--white);
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.project-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+}
+.project-card.large { grid-row: span 2; aspect-ratio: auto; }
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.project-card:hover .project-img { transform: scale(1.07); }
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11,31,65,0.9) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.8rem;
+}
+.project-card:hover .project-overlay { opacity: 1; }
+.project-cat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+.project-overlay h3 {
+  color: var(--white);
+  font-size: 1.15rem;
+}
+.project-overlay p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.78rem;
+  margin-top: 0.3rem;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: var(--radius);
+  box-shadow: 0 0 80px rgba(0,0,0,0.5);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
+
+/* =========================================
+   TESTIMONIALS
+   ========================================= */
+#testimonials {
+  background: var(--blue);
+  position: relative;
+  overflow: hidden;
+}
+#testimonials::before {
+  content: '"';
+  position: absolute;
+  top: -2rem;
+  right: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22rem;
+  color: rgba(255,255,255,0.03);
+  line-height: 1;
+  pointer-events: none;
+}
+#testimonials .section-label { color: var(--gold-light); }
+#testimonials h2 { color: var(--white); }
+.testi-slider {
+  position: relative;
+  overflow: hidden;
+}
+.testi-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.testi-card {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.testi-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+.testi-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1rem;
+}
+.testi-stars i { color: var(--gold); font-size: 0.85rem; }
+.testi-text {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.testi-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+.testi-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.testi-role {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.55);
+}
+.testi-controls {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.testi-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.testi-dot.active {
+  background: var(--gold);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* =========================================
+   FAQ SECTION
+   ========================================= */
+#faq {
+  background: var(--cream);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.faq-list { display: flex; flex-direction: column; gap: 0.8rem; }
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.faq-item.open { box-shadow: var(--shadow-md); }
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 1.5rem;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue);
+  gap: 1rem;
+}
+.faq-q i {
+  min-width: 18px;
+  transition: transform 0.3s ease;
+  color: var(--gold);
+}
+.faq-item.open .faq-q i { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+.faq-item.open .faq-a { max-height: 300px; }
+.faq-a p {
+  padding: 0 1.5rem 1.3rem;
+  font-size: 0.84rem;
+  color: var(--gray-dark);
+  line-height: 1.75;
+}
+.faq-cta-box {
+  background: var(--blue);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  text-align: center;
+}
+.faq-cta-box h3 { color: var(--white); margin-bottom: 0.8rem; }
+.faq-cta-box p { color: rgba(255,255,255,0.7); font-size: 0.88rem; margin-bottom: 1.5rem; }
+.faq-cta-box .btn { margin: 0.3rem; }
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+#contact {
+  background: var(--white);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+.contact-info h3 { margin-bottom: 0.8rem; }
+.contact-info p { font-size: 0.88rem; color: var(--gray-dark); margin-bottom: 2rem; }
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.info-icon {
+  width: 44px; height: 44px;
+  background: var(--gold-pale);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+}
+.info-icon i { color: var(--gold); font-size: 1rem; }
+.info-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.2rem;
+}
+.info-val {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+.contact-btns { display: flex; gap: 0.8rem; margin-top: 2rem; flex-wrap: wrap; }
+.btn-wa {
+  background: #25D366;
+  color: var(--white) !important;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+}
+.btn-wa:hover { background: #1ebe5a; transform: translateY(-2px); }
+.btn-call {
+  background: var(--blue);
+  color: var(--white) !important;
+}
+.btn-call:hover { background: var(--blue-mid); transform: translateY(-2px); }
+
+.contact-form {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 0.45rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--white);
+  transition: border-color 0.25s, box-shadow 0.25s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201,169,75,0.1);
+}
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-submit { width: 100%; justify-content: center; border-radius: var(--radius); padding: 1rem; }
+
+/* Map */
+.map-placeholder {
+  margin-top: 2rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 220px;
+  background: var(--cream-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(201,169,75,0.3);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.map-placeholder:hover { border-color: var(--gold); }
+.map-placeholder p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: var(--gray);
+  text-align: center;
+}
+.map-placeholder i { font-size: 2rem; color: var(--gold); display: block; margin-bottom: 0.5rem; }
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+  background: #0d2044;
+  padding: 5rem 0 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-brand .f-logo-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+.footer-brand .f-logo-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.footer-brand p {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.84rem;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+.footer-socials {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+.social-link {
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+.social-link:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+.footer-col h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+.footer-col ul li a {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.84rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer-col ul li a::before {
+  content: '→';
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translateX(-8px);
+}
+.footer-col ul li a:hover::before { opacity: 1; transform: translateX(0); }
+.footer-col ul li a:hover { color: var(--gold-light); }
+.f-contact li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.83rem;
+  margin-bottom: 0.8rem;
+}
+.f-contact li i {
+  color: var(--gold);
+  margin-top: 0.2rem;
+  min-width: 14px;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-bottom p {
+  color: rgba(255,255,255,0.35);
+  font-size: 0.78rem;
+}
+.footer-bottom span { color: var(--gold); }
+
+/* =========================================
+   FLOATING BUTTONS
+   ========================================= */
+.float-wa {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.8rem;
+  width: 52px; height: 52px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.4rem;
+  box-shadow: 0 4px 18px rgba(37,211,102,0.45);
+  z-index: 900;
+  transition: var(--transition);
+  animation: floatPulse 3s ease-in-out infinite;
+}
+.float-wa:hover { transform: scale(1.1); }
+.scroll-top {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  width: 44px; height: 44px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+  z-index: 900;
+  transition: var(--transition);
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-top.visible { opacity: 1; pointer-events: all; }
+.scroll-top:hover { background: var(--gold); transform: translateY(-3px); }
+
+@keyframes floatPulse {
+  0%,100% { box-shadow: 0 4px 18px rgba(37,211,102,0.45); }
+  50% { box-shadow: 0 4px 28px rgba(37,211,102,0.65); }
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* staggered children */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay: 0s; }
+.stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay: 0.1s; }
+.stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay: 0.2s; }
+.stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay: 0.3s; }
+.stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay: 0.4s; }
+.stagger.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay: 0.5s; }
+.stagger.visible > *:nth-child(7) { opacity:1; transform:none; transition-delay: 0.6s; }
+.stagger.visible > *:nth-child(8) { opacity:1; transform:none; transition-delay: 0.7s; }
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8922f 100%);
+  padding: 4rem 0;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-inner h2 { color: var(--white); margin-bottom: 0.4rem; }
+.cta-inner p { color: rgba(255,255,255,0.82); font-size: 0.95rem; }
+.btn-white {
+  background: var(--white);
+  color: var(--gold) !important;
+  font-weight: 700;
+}
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .about-grid { gap: 3rem; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-card.large { grid-row: span 1; }
+  .testi-card { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  section { padding: 4rem 0; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .about-grid,
+  .faq-grid,
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-badge { left: 1rem; top: 1rem; }
+  .about-accent-img { display: none; }
+  .hero-stats-inner { flex-wrap: wrap; }
+  .stat-item { min-width: 45%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .testi-card { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .cta-inner { flex-direction: column; text-align: center; }
+  .about-values { grid-template-columns: 1fr; }
+  .timeline { flex-wrap: wrap; gap: 1.5rem; }
+  .timeline::before { display: none; }
+  .tl-step { flex: 0 0 45%; }
+  .hero-stats { position: static; padding: 0 0 2rem; }
+  #hero { padding-bottom: 0; }
+  .scroll-ind { display: none; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 1.2rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; }
+  .hero-btns .btn { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- =============================================
+     STICKY NAVBAR
+     ============================================= -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-name">G K Builders</span>
+      <span class="logo-tag">Tiruppalai · Madurai</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#hero" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </div>
+
+    <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  <span class="mobile-nav-close">&times;</span>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#why">Why Us</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="hero">
+  <div class="hero-bg" role="img" aria-label="Modern construction building background"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        <span>Trusted Construction Partner Since 2010</span>
+      </div>
+      <h1>Building <em>Dreams</em><br>Into Reality</h1>
+      <p>Premium Construction &amp; Contracting Services in Tiruppalai, Madurai — delivering excellence with precision on every project.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-comments"></i> Get Free Consultation
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-th-large"></i> View Projects
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="hero-stats">
+    <div class="container">
+      <div class="hero-stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-target="14" data-suffix="+">14+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="350" data-suffix="+">350+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="500" data-suffix="+">500+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100" data-suffix="%">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     TRUST BAR
+     ============================================= -->
+<div class="trust-bar">
+  <div class="container trust-inner">
+    <div class="trust-item"><i class="fas fa-certificate"></i> Licensed &amp; Certified</div>
+    <div class="trust-item"><i class="fas fa-shield-alt"></i> Quality Assured</div>
+    <div class="trust-item"><i class="fas fa-clock"></i> On-Time Delivery</div>
+    <div class="trust-item"><i class="fas fa-tools"></i> Premium Materials</div>
+    <div class="trust-item"><i class="fas fa-headset"></i> 24/7 Support</div>
+  </div>
+</div>
+
+
+<!-- =============================================
+     ABOUT SECTION
+     ============================================= -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Image block -->
+      <div class="about-img-block reveal-left">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+          alt="G K Builders construction project in Madurai"
+          class="about-main-img"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80"
+          alt="Construction site overview"
+          class="about-accent-img"
+        />
+        <div class="about-badge">
+          <span class="badge-num">14+</span>
+          <span class="badge-txt">Years of<br>Excellence</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="reveal-right">
+        <span class="section-label">About G K Builders</span>
+        <div class="gold-line"></div>
+        <h2 class="section-title">Your Trusted Partner in Premium Construction</h2>
+        <p style="color:var(--gray-dark);font-size:0.92rem;margin-bottom:1.2rem;">
+          G K Builders is a leading provider of comprehensive contracting and building services based in Tiruppalai, Madurai. Our experienced professionals are dedicated to ensuring every project — regardless of scale — is executed with precision, quality, and excellence.
+        </p>
+        <p style="color:var(--gray-dark);font-size:0.92rem;margin-bottom:1.8rem;">
+          We transform our clients' visions into reality by offering reliable, efficient, and fully customized construction solutions. From luxurious villas to large-scale commercial complexes, G K Builders delivers spaces that are functional, aesthetically pleasing, and built to last.
+        </p>
+
+        <div class="about-values stagger">
+          <div class="value-card">
+            <i class="fas fa-bullseye"></i>
+            <h4>Our Mission</h4>
+            <p>Exceed expectations through top-tier services, highest standards of quality, and complete client satisfaction.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-eye"></i>
+            <h4>Our Vision</h4>
+            <p>To be Madurai's most trusted and innovative construction partner, building sustainable legacies.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-handshake"></i>
+            <h4>Integrity</h4>
+            <p>Transparent dealings and honest communication at every stage of your project.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-leaf"></i>
+            <h4>Sustainability</h4>
+            <p>Eco-conscious construction practices for spaces that stand the test of time.</p>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline stagger" style="margin-top:2.5rem;">
+          <div class="tl-step">
+            <div class="tl-num">01</div>
+            <div class="tl-label">Planning</div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-num">02</div>
+            <div class="tl-label">Design</div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-num">03</div>
+            <div class="tl-label">Construction</div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-num">04</div>
+            <div class="tl-label">Delivery</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     SERVICES SECTION
+     ============================================= -->
+<section id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-label">What We Build</span>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Our Expert Services</h2>
+      <p class="section-subtitle">Comprehensive construction and contracting solutions tailored to your vision and requirements.</p>
+    </div>
+
+    <div class="services-grid stagger">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-building"></i></div>
+        <h3>Apartment Construction</h3>
+        <p>Modern multi-unit residential complexes designed for comfort, space efficiency, and lasting value.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-home"></i></div>
+        <h3>Villa Construction</h3>
+        <p>Bespoke luxury villas crafted with premium materials and meticulous attention to every detail.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-landmark"></i></div>
+        <h3>Bungalows</h3>
+        <p>Elegant single-storey and duplex bungalow designs that blend style with practical living.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-city"></i></div>
+        <h3>Residential Buildings</h3>
+        <p>Full-service residential construction from foundation to finishing, built to the highest standards.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Commercial Buildings</h3>
+        <p>Corporate offices, retail spaces, and commercial complexes engineered for performance and longevity.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+        <h3>Renovation Services</h3>
+        <p>Expert renovation and refurbishment services to transform and modernize your existing spaces.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-search-location"></i></div>
+        <h3>Site Inspection</h3>
+        <p>Thorough site assessment and soil study to ensure a solid foundation for your project.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-couch"></i></div>
+        <h3>Interior &amp; Exterior</h3>
+        <p>Complete interior design and exterior cladding solutions that elevate aesthetics and functionality.</p>
+        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     WHY CHOOSE US
+     ============================================= -->
+<section id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-label">Our Strengths</span>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Why Choose G K Builders?</h2>
+      <p class="section-subtitle">We bring together expertise, quality, and dedication to deliver exceptional results on every project.</p>
+    </div>
+
+    <div class="why-grid stagger">
+      <div class="why-card">
+        <span class="why-num">01</span>
+        <div class="why-icon"><i class="fas fa-users"></i></div>
+        <h3>Experienced Professionals</h3>
+        <p>Our team of skilled engineers, architects, and contractors brings over 14 years of combined expertise to every project, ensuring flawless execution.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">02</span>
+        <div class="why-icon"><i class="fas fa-gem"></i></div>
+        <h3>High-Quality Materials</h3>
+        <p>We source only premium-grade, certified construction materials — because your building deserves nothing but the best foundations.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">03</span>
+        <div class="why-icon"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Customized Solutions</h3>
+        <p>Every project is uniquely crafted to match your specific vision, budget, and lifestyle requirements — no generic templates here.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">04</span>
+        <div class="why-icon"><i class="fas fa-calendar-check"></i></div>
+        <h3>Timely Delivery</h3>
+        <p>Disciplined project management and streamlined processes ensure your project is delivered on schedule, every single time.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">05</span>
+        <div class="why-icon"><i class="fas fa-heart"></i></div>
+        <h3>Client Satisfaction</h3>
+        <p>We measure our success by your satisfaction. Our dedicated client relations team stays with you from planning through to post-handover.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">06</span>
+        <div class="why-icon"><i class="fas fa-cogs"></i></div>
+        <h3>Modern Techniques</h3>
+        <p>From advanced structural methods to smart building technologies, we embrace innovation to deliver safer, stronger structures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CTA BANNER
+     ============================================= -->
+<div class="cta-banner">
+  <div class="container cta-inner">
+    <div>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);">Ready to Start Your Dream Project?</h2>
+      <p>Talk to our experts today for a free site inspection and detailed consultation.</p>
+    </div>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="#contact" class="btn btn-white"><i class="fas fa-comments"></i> Free Consultation</a>
+      <a href="tel:+919876543210" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:white;"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- =============================================
+     PROJECTS / GALLERY
+     ============================================= -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Our Portfolio</span>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A selection of our finest completed works across Madurai and beyond.</p>
+    </div>
+
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-cat="all">All Projects</button>
+      <button class="filter-btn" data-cat="villa">Villas</button>
+      <button class="filter-btn" data-cat="apartment">Apartments</button>
+      <button class="filter-btn" data-cat="commercial">Commercial</button>
+      <button class="filter-btn" data-cat="interior">Interiors</button>
+    </div>
+
+    <div class="projects-grid stagger">
+      <div class="project-card large" data-cat="villa">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" alt="Luxury villa project Madurai" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Villa</span>
+          <h3>Serene Luxury Villa</h3>
+          <p>Tiruppalai, Madurai — 4800 sq.ft</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="apartment">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="Apartment complex project" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Apartment</span>
+          <h3>Green Residency</h3>
+          <p>Madurai City — 24 Units</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="commercial">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Commercial office building" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Commercial</span>
+          <h3>Corporate Office Complex</h3>
+          <p>Madurai — G+4 Structure</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="interior">
+        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Modern interior design" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Interior</span>
+          <h3>Contemporary Living Room</h3>
+          <p>Premium Interior Finish</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="villa">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Modern bungalow" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Bungalow</span>
+          <h3>Heritage Bungalow</h3>
+          <p>Tiruppalai — 3200 sq.ft</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="apartment">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Residential apartment building" class="project-img" />
+        <div class="project-overlay">
+          <span class="project-cat">Apartment</span>
+          <h3>Sky Heights Residency</h3>
+          <p>Madurai — G+6 Building</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="Project preview" />
+</div>
+
+
+<!-- =============================================
+     TESTIMONIALS
+     ============================================= -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Client Stories</span>
+      <div class="gold-line"></div>
+      <h2 class="section-title" style="color:var(--white);">What Our Clients Say</h2>
+    </div>
+
+    <div class="testi-slider">
+      <div class="testi-track">
+
+        <!-- Slide 1 -->
+        <div class="testi-card">
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"G K Builders exceeded all my expectations. Our villa was delivered on time, within budget, and the craftsmanship is truly exceptional. I highly recommend them for anyone in Madurai."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=11" alt="Ramesh Kumar" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Ramesh Kumar</div>
+                <div class="testi-role">Villa Owner, Tiruppalai</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"The team at G K Builders handled our commercial building project with great professionalism. They managed everything from planning to delivery seamlessly. Outstanding service!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=22" alt="Priya Sundar" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Priya Sundar</div>
+                <div class="testi-role">Business Owner, Madurai</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testi-text">"Superb quality of work and extremely transparent communication throughout. G K Builders made building our dream home a stress-free and joyful experience."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=33" alt="Murugan Arulprakash" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Murugan Arulprakash</div>
+                <div class="testi-role">Homeowner, Madurai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testi-card">
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Remarkable attention to detail in every aspect of our apartment complex. The quality of materials used and the workmanship are truly premium-grade."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=44" alt="Kavitha Rajan" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Kavitha Rajan</div>
+                <div class="testi-role">Property Developer, Madurai</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"From the very first site inspection to the final handover, G K Builders was professional, punctual, and delivered a product that far exceeded our expectations."</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=55" alt="Senthil Nathan" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Senthil Nathan</div>
+                <div class="testi-role">Retail Building Owner</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-item">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Best construction company in Madurai, no doubt. They customized the entire bungalow to my exact specifications and finished well ahead of schedule!"</p>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/100?img=66" alt="Lakshmi Devi" class="testi-avatar" />
+              <div>
+                <div class="testi-name">Lakshmi Devi</div>
+                <div class="testi-role">Bungalow Owner, Tiruppalai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testi-controls">
+        <div class="testi-dot active"></div>
+        <div class="testi-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ SECTION
+     ============================================= -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-grid">
+
+      <div>
+        <div class="reveal">
+          <span class="section-label">Common Questions</span>
+          <div class="gold-line"></div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know before starting your construction journey with us.</p>
+        </div>
+
+        <div class="faq-list reveal" style="margin-top:2rem;">
+          <div class="faq-item open">
+            <div class="faq-q">
+              <span>How can I locate G K Builders in Tiruppalai, Madurai?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-a">
+              <p>G K Builders is conveniently located near the E B Office, Ayyapan Nagar, Tiruppalai, Madurai. You can visit us during business hours or contact us for directions. We are also reachable via WhatsApp and phone for quick queries.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>Where exactly is the company located?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-a">
+              <p>Our office is located in Tiruppalai, Madurai, close to E B Office Near Ayyapan Nagar. This central location allows us to conveniently serve clients across Madurai and surrounding areas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>Do I need to make an advance payment?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-a">
+              <p>Yes, like most professional builders, we do require an advance payment to begin your project. The advance amount varies based on project scope and scale. We recommend contacting us directly to discuss a transparent payment schedule suited to your project.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>Does G K Builders inspect the site before construction?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-a">
+              <p>Absolutely. Site inspection is an integral part of our process. Our technical team will inspect the site to prepare accurate designs, assess soil conditions, verify dimensions, and evaluate all critical factors before finalizing any construction plan. This ensures the safest and most efficient build.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>Do builders &amp; developers need a licence to perform their work?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-a">
+              <p>Yes. Construction licences are mandatory. Prerequisites vary by state — builders must pass state licensure exams and register with the state board. G K Builders is fully licensed and compliant with all Tamil Nadu construction regulations, so you can build with complete confidence and legal assurance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA box -->
+      <div class="reveal-right" style="margin-top:1rem;">
+        <div class="faq-cta-box">
+          <i class="fas fa-hard-hat" style="font-size:2.5rem;color:var(--gold-light);margin-bottom:1rem;display:block;"></i>
+          <h3>Still Have Questions?</h3>
+          <p>Our construction experts are ready to answer any questions you have about your project. Reach out for a free, no-obligation consultation.</p>
+          <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline" style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.3);">
+            <i class="fas fa-phone"></i> Call Us Now
+          </a>
+        </div>
+
+        <!-- Mini map -->
+        <div class="map-placeholder" style="margin-top:1.5rem;" title="Click to open in Google Maps" role="button" tabindex="0" aria-label="Open location in Google Maps">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><strong>G K Builders</strong><br>Near E B Office, Ayyapan Nagar<br>Tiruppalai, Madurai, Tamil Nadu<br><br><small>Click to open in Google Maps →</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CONTACT SECTION
+     ============================================= -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-label">Get In Touch</span>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Let's Build Together</h2>
+      <p class="section-subtitle">Share your project details with us and our team will get back to you within 24 hours.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="reveal-left">
+        <h3>Contact Information</h3>
+        <p>We're available Monday–Saturday to discuss your construction project and provide expert guidance.</p>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="info-label">Office Address</div>
+            <div class="info-val">Near E B Office, Ayyapan Nagar,<br>Tiruppalai, Madurai — Tamil Nadu</div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div class="info-label">Phone Number</div>
+            <div class="info-val"><a href="tel:+919876543210" style="color:var(--text);">+91 98765 43210</a></div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="info-label">Email Address</div>
+            <div class="info-val"><a href="mailto:info@gkbuilders.in" style="color:var(--text);">info@gkbuilders.in</a></div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="info-label">Working Hours</div>
+            <div class="info-val">Mon – Sat: 9:00 AM – 6:00 PM<br>Sunday: By Appointment</div>
+          </div>
+        </div>
+
+        <div class="contact-btns">
+          <a href="https://wa.me/919876543210" class="btn btn-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+          <a href="tel:+919876543210" class="btn btn-call">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="reveal-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Apartment Construction</option>
+              <option>Villa Construction</option>
+              <option>Bungalow Construction</option>
+              <option>Residential Building</option>
+              <option>Commercial Building</option>
+              <option>Renovation Services</option>
+              <option>Site Inspection</option>
+              <option>Interior &amp; Exterior Work</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project — location, size, budget, timeline…" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="f-logo-name">G K Builders</div>
+        <div class="f-logo-tag">Building Dreams Into Reality</div>
+        <p>A premium construction and contracting company serving Tiruppalai, Madurai and surrounding areas. We build with precision, passion, and pride.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/919876543210" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#services">Apartments</a></li>
+          <li><a href="#services">Villas</a></li>
+          <li><a href="#services">Bungalows</a></li>
+          <li><a href="#services">Residential</a></li>
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Renovation</a></li>
+          <li><a href="#services">Interior &amp; Exterior</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul class="f-contact">
+          <li><i class="fas fa-map-marker-alt"></i> Near E B Office, Ayyapan Nagar, Tiruppalai, Madurai</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210" style="color:inherit;">+91 98765 43210</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@gkbuilders.in" style="color:inherit;">info@gkbuilders.in</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 <span>G K Builders</span>. All rights reserved. Tiruppalai, Madurai.</p>
+      <p style="font-size:0.74rem;">Designed with <span>♥</span> for premium construction</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =============================================
+     FLOATING BUTTONS
+     ============================================= -->
+<a href="https://wa.me/919876543210" class="float-wa" target="_blank" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<button class="scroll-top" aria-label="Scroll to top" title="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+
+<!-- JS -->
+<script>
+/* =========================================
+   G K BUILDERS — script.js
+   ========================================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ── NAVBAR SCROLL ──────────────────────────
+  const navbar = document.getElementById('navbar');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Scroll-to-top button
+    const scrollTop = document.querySelector('.scroll-top');
+    if (scrollTop) {
+      scrollTop.classList.toggle('visible', window.scrollY > 400);
+    }
+
+    // Active nav link
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      const height = sec.offsetHeight;
+      if (window.scrollY >= top && window.scrollY < top + height) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const activeLink = document.querySelector(`.nav-links a[href="#${sec.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  });
+
+  // ── HAMBURGER MENU ─────────────────────────
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileClose = document.querySelector('.mobile-nav-close');
+
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  });
+  mobileClose?.addEventListener('click', closeMobile);
+  document.querySelectorAll('.mobile-nav a').forEach(a => {
+    a.addEventListener('click', closeMobile);
+  });
+
+  function closeMobile() {
+    hamburger?.classList.remove('open');
+    mobileNav?.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // ── SCROLL REVEAL ──────────────────────────
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // ── COUNTER ANIMATION ──────────────────────
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-target'));
+    const suffix = el.getAttribute('data-suffix') || '';
+    const duration = 1800;
+    const start = performance.now();
+
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('[data-target]').forEach(animateCounter);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.hero-stats-inner, .counters-row').forEach(el => {
+    counterObserver.observe(el);
+  });
+
+  // ── SCROLL TO TOP ──────────────────────────
+  document.querySelector('.scroll-top')?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ── SMOOTH SCROLL ──────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ── FAQ ACCORDION ──────────────────────────
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ── PROJECT FILTER ─────────────────────────
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.getAttribute('data-cat');
+
+      projectCards.forEach(card => {
+        const cardCat = card.getAttribute('data-cat');
+        const show = cat === 'all' || cardCat === cat;
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          card.style.display = show ? '' : 'none';
+          if (show) {
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 10);
+          }
+        }, 200);
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      });
+    });
+  });
+
+  // ── LIGHTBOX ───────────────────────────────
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImg = lightbox?.querySelector('img');
+
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('.project-img');
+      if (lightboxImg) lightboxImg.src = img.src;
+      lightbox?.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('click', e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  function closeLightbox() {
+    lightbox?.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // ── TESTIMONIAL SLIDER ─────────────────────
+  const track = document.querySelector('.testi-track');
+  const dots = document.querySelectorAll('.testi-dot');
+  let current = 0;
+  const total = dots.length;
+
+  function goTo(index) {
+    current = (index + total) % total;
+    if (track) track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  let autoSlide = setInterval(() => goTo(current + 1), 5000);
+  track?.parentElement?.addEventListener('mouseenter', () => clearInterval(autoSlide));
+  track?.parentElement?.addEventListener('mouseleave', () => {
+    autoSlide = setInterval(() => goTo(current + 1), 5000);
+  });
+
+  // ── CONTACT FORM ───────────────────────────
+  const contactForm = document.getElementById('contactForm');
+  contactForm?.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('.form-submit');
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    btn.style.background = '#2ecc71';
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = '';
+      contactForm.reset();
+    }, 3000);
+  });
+
+  // ── BUTTON RIPPLE ──────────────────────────
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const ripple = document.createElement('span');
+      ripple.style.cssText = `
+        position:absolute; border-radius:50%;
+        background:rgba(255,255,255,0.4);
+        transform:scale(0); animation:ripple 0.6s linear;
+        left:${x}px; top:${y}px; width:20px; height:20px;
+        margin-left:-10px; margin-top:-10px; pointer-events:none;
+      `;
+      this.style.position = 'relative';
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 700);
+    });
+  });
+
+  // add ripple keyframe
+  const style = document.createElement('style');
+  style.textContent = '@keyframes ripple{to{transform:scale(20);opacity:0;}}';
+  document.head.appendChild(style);
+
+  // ── MAP PLACEHOLDER ────────────────────────
+  document.querySelector('.map-placeholder')?.addEventListener('click', () => {
+    window.open('https://maps.google.com/?q=Ayyapan+Nagar+Tiruppalai+Madurai', '_blank');
+  });
+
+});
+</script>
+</body>
+</html>
